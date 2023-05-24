@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrap-form">
+      <div class="form-product none">
+        <div class="product">
+          <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+          <div class="pr-img-wrap"><img src="./img/ad-black.png" alt="" /></div>
+          <div class="pr-info">
+            <div class="pr-name">Adidas</div>
+            <div class="pr-color">Black</div>
+          </div>
+          <div class="pr-price-wrap">
+            <div class="pr-price">$ <span class="pr-value">200</span></div>
+            <div class="sale"><span class="sale-value">30</span>%</div>
+          </div>
+        </div>
+        <div class="buy-btn">Buy</div>
+      </div>
+      <div class="form-user none">
+        <div class="us-close-btn"><i class="fa-solid fa-xmark"></i></div>
+        <div class="wrap-user-info">
+          <div class="user-name">
+            <label>Name</label>
+            <input type="text" />
+          </div>
+          <div class="user-phone">
+            <label>Phone</label>
+            <input type="text" />
+          </div>
+          <div class="user-payment">
+            <div>Payment</div>
+            <div class="method">
+              <div class="cash">Cash</div>
+              <div class="online">Online</div>
+            </div>
+          </div>
+          <div class="user-acc-number none">
+            <label>Bank Account Number</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="accept-btn">Accept</div>
+      </div>
+    </div>
+
+    <!----------------------------------------------- NAVIGATION 1 -->
+    <div class="app">
+      <div class="navigation-1">
+        <div class="navigation-left-col">
+          <img class="logo" src="./img/image 37.png" alt="" />
+        </div>
+        <div class="navigation-center-col"></div>
+        <div class="navigation-right-col">
+          <div class="wrap-nav-item">
+            <div class="nav-item"><a href="">New & Featrured</a></div>
+            <div class="nav-item"><a href="">Adidas</a></div>
+            <div class="nav-item"><a href="">Jordan</a></div>
+            <div class="nav-item"><a href="">Sales</a></div>
+          </div>
+          <div class="nav-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="SEARCH" />
+          </div>
+          <div class="customer-box">
+            <div class="customer-btn"><i class="fa-solid fa-user"></i></div>
+            <div class="count">0</div>
+            <div class="customer none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------- NAVIGATION 2 -->
+    <div class="navigation-2">
+      <div class="bot-navigation-left-col">
+        <img src="./img/images.jpg" class="banner" />
+      </div>
+      <div class="bot-navigation-right-col">
+        <div class="title">Sneakers</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-left-col">
+        <div class="filter-color">
+          <div class="color-btn">Color</div>
+          <div class="color-item">
+            <a>Blue</a>
+            <div class="blue-box"></div>
+          </div>
+          <div class="color-item">
+            <a>Green</a>
+            <div class="green-box"></div>
+          </div>
+          <div class="color-item">
+            <a>Yellow</a>
+            <div class="yellow-box"></div>
+          </div>
+          <div class="color-item">
+            <a>Red</a>
+            <div class="red-box"></div>
+          </div>
+          <div class="color-item">
+            <a>Black</a>
+            <div class="black-box"></div>
+          </div>
+          <div class="color-item">
+            <a>White</a>
+            <div class="white-box"></div>
+          </div>
+        </div>
+        <div class="filter-price">
+          <div class="title">Filter</div>
+          <div class="show-price">
+            Closest To $ <span class="value">150</span>
+          </div>
+          <input
+            type="range"
+            min="100"
+            max="300"
+            value="170"
+            class="input-filter"
+          />
+          <div class="enter-btn">Enter</div>
+        </div>
+      </div>
+      <div class="content-right-col">
+        <div class="wrap-items"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
