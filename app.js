@@ -96,7 +96,8 @@ closeUserBtn.addEventListener("click", function () {
 });
 
 // Handle click item
-
+let succesNoticeBox = document.querySelector(".success-order-box");
+let successBackBtn = document.querySelector(".back-btn");
 let productForm = document.querySelector(".form-product");
 let userForm = document.querySelector(".form-user");
 function handleClickItem() {
@@ -121,9 +122,7 @@ function handleClickItem() {
       productColor.innerHTML = `${itemColor.textContent}`;
       itemPrice.innerHTML = `${productPrice.textContent}`;
       // Prodcut Buy Btn
-      let cusName = document.querySelector(".cus-name");
-      let cusPhone = document.querySelector(".cus-phone");
-      let cusProduct = document.querySelector(".cus-pr");
+
       let count = document.querySelector(".count");
       let customerBox = document.querySelector(".customer");
       productBuyBtn.addEventListener("click", function () {
@@ -136,6 +135,8 @@ function handleClickItem() {
         );
         let acceptBtn = userForm.querySelector(".accept-btn");
         acceptBtn.onclick = function () {
+          succesNoticeBox.classList.remove("none");
+
           userForm.classList.add("none");
           let newObj = {
             name: `${userNameInput.value}`,
@@ -155,7 +156,6 @@ function handleClickItem() {
                 <div class="cus-phone">${e.phone}</div>
                 <div class="cus-pr">${e.bankCode}</div>`;
             customerBox.append(item);
-            console.log(item);
           });
         };
       });
@@ -308,3 +308,7 @@ inputFilterPrice.addEventListener("input", function () {
     });
   };
 });
+// success Back Btn Click
+successBackBtn.onclick = function () {
+  succesNoticeBox.classList.add("none");
+};

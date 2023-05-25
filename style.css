@@ -310,9 +310,36 @@
 .wrap-items .item:hover > .img-wrap img {
   transform: translateY(-50px) rotate(-30deg);
 }
+/* Success-order-box */
 
 /* Form Product */
-
+.success-order-box {
+  width: 400px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #02970f;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+.back-btn {
+  background-color: #fff;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+}
+.notice {
+  font-size: 30px;
+}
 .form-product {
   width: 400px;
   height: 600px;
